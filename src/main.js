@@ -30,6 +30,7 @@ new Vue({
   store,
   components: { App },
   template: '<App/>',
+  // подключаем бд
   created () {
     fb.initializeApp({
       apiKey: 'AIzaSyCn5t7x04WnbOMDyVlQtOqnlKwzLwXb6xE',
@@ -48,23 +49,5 @@ new Vue({
     })
 
     this.$store.dispatch('fetchAds')
-
-    // fb.initializeApp({
-    //   apiKey: 'AIzaSyDeNF5i-9-5F22WtAl6661qAWT5nbRTmKA',
-    //   authDomain: 'vuetify-project-dbdab.firebaseapp.com',
-    //   databaseURL: 'https://vuetify-project-dbdab-default-rtdb.europe-west1.firebasedatabase.app',
-    //   projectId: 'vuetify-project-dbdab',
-    //   storageBucket: 'vuetify-project-dbdab.appspot.com',
-    //   messagingSenderId: '966279642754',
-    //   appId: '1:966279642754:web:6fca0bd8d60db18c03be9b',
-    //   measurementId: 'G-7CRZEVN72T'
-    // })
-    // fb.auth().onAuthStateChanged(user => {
-    //   if (user) {
-    //     this.$store.dispatch('autoLoginUser', user)
-    //   }
-    // })
-
-    // this.$store.dispatch('fetchAds')
   }
 })
