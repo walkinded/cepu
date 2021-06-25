@@ -13,8 +13,8 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <addEditAdModal :ad="ad" v-if="isOwner"></addEditAdModal>
-            <app-buy-modal :ad="ad"></app-buy-modal>
+            <addEditAdModal :ad="ad" v-if="isOwner"></addEditAdModal> <!-- подключение диалогового окна -->
+            <app-buy-modal :ad="ad"></app-buy-modal> <!-- подключение диалогового окна -->
           </v-card-actions>
         </v-card>
         <div v-else class="text-xs-center">

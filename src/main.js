@@ -39,8 +39,7 @@ new Vue({
       projectId: 'cepu-db',
       storageBucket: 'cepu-db.appspot.com',
       messagingSenderId: '1028886220358',
-      appId: '1:1028886220358:web:fd9ad96c0a57e02e17c447',
-      measurementId: 'G-7CRZEVN72T'
+      appId: '1:1028886220358:web:fd9ad96c0a57e02e17c447'
     })
     fb.auth().onAuthStateChanged(user => {
       if (user) {

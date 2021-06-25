@@ -1,13 +1,13 @@
 <template>
   <v-dialog width="400px" v-model="modal">
-    <v-btn class="primary" flat slot="activator">Buy</v-btn>
+    <v-btn class="primary" flat slot="activator">Купить</v-btn>
 
     <v-card>
       <v-container>
         <v-layout row>
           <v-flex xs12>
             <v-card-title>
-              <h1 class="text--primary">Do you wan't to buy it?</h1>
+              <h1 class="text--primary">Вы хотите это купить?</h1>
             </v-card-title>
           </v-flex>
         </v-layout>
@@ -17,13 +17,13 @@
             <v-card-text>
               <v-text-field
                 name="name"
-                label="Your name"
+                label="Имя"
                 type="text"
                 v-model="name"
               ></v-text-field>
               <v-text-field
                 name="phone"
-                label="Your phone"
+                label="Телефон"
                 type="text"
                 v-model="phone"
               ></v-text-field>
@@ -40,7 +40,7 @@
                 @click="onCancel"
                 :disabled="localLoading"
               >
-                Close
+                Закрыть
               </v-btn>
               <v-btn
                 class="success"
@@ -49,7 +49,7 @@
                 :disabled="localLoading"
                 :loading="localLoading"
               >
-                Buy it!
+                Купить
               </v-btn>
             </v-card-actions>
           </v-flex>
